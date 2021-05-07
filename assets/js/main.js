@@ -60,13 +60,12 @@ console.log(classe);
 var elementoClasse;
 for (var i = 0; i < classe.length; i++){
     elementoClasse = classe[i];
-    console.log(elementoClasse.nome + " " + elementoClasse.cognome);
+    console.log(elementoClasse);
 }
 console.log(elementoClasse);
-/* document.getElementById("otherstudents").innerHTML = elementoClasse["nome"] + " " + elementoClasse["cognome"];
- */
+
 for (chiave in elementoClasse) {
-    document.getElementById("otherstudents").innerHTML = elementoClasse["nome"] + " " + elementoClasse["cognome"];
+    document.getElementById("otherstudents").innerHTML += elementoClasse["nome"] + " " + elementoClasse["cognome"];
 
 }
 //Dare la possibilità all’utente, attraverso 3 prompt(), 
