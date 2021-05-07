@@ -61,13 +61,14 @@ var elementoClasse;
 for (var i = 0; i < classe.length; i++){
     elementoClasse = classe[i];
     console.log(elementoClasse);
+    for (chiave in elementoClasse) {
+        document.getElementById("otherstudents").innerHTML += elementoClasse["nome"] + " " + elementoClasse["cognome"];
+    
+    }
 }
 console.log(elementoClasse);
 
-for (chiave in elementoClasse) {
-    document.getElementById("otherstudents").innerHTML += elementoClasse["nome"] + " " + elementoClasse["cognome"];
 
-}
 //Dare la possibilità all’utente, attraverso 3 prompt(), 
 //di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
